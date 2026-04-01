@@ -1,12 +1,124 @@
 <!DOCTYPE html>
-<html>
+<html lang="ru">
 <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>VPN Инструкция</title>
+    <style>
+        body {
+            font-family: system-ui, -apple-system, sans-serif;
+            max-width: 700px;
+            margin: 0 auto;
+            padding: 20px;
+            line-height: 1.5;
+            background: #f8f9fa;
+        }
+        .card {
+            background: white;
+            border-radius: 16px;
+            padding: 20px;
+            margin-bottom: 20px;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+        }
+        .code {
+            background: #f1f3f5;
+            padding: 12px;
+            border-radius: 8px;
+            font-family: monospace;
+            word-break: break-all;
+        }
+        button {
+            background: #10b981;
+            color: white;
+            border: none;
+            padding: 12px 20px;
+            border-radius: 8px;
+            cursor: pointer;
+            font-size: 16px;
+            width: 100%;
+        }
+        button:hover {
+            background: #059669;
+        }
+        hr {
+            margin: 20px 0;
+        }
+        a {
+            color: #10b981;
+            text-decoration: none;
+        }
+        a:hover {
+            text-decoration: underline;
+        }
+    </style>
 </head>
 <body>
-    <h1>🔐 VPN Инструкция</h1>
-    <p>Обновлено: 2026-04-01 15:21:25</p>
-    <p>Страница обновляется автоматически.</p>
+    <div class="card">
+        <h1>🔐 Как восстановить доступ к Telegram (временная инструкция)</h1>
+        
+        <p><b>Если Telegram уже работает</b> — перейдите по полученной реферальной ссылке, выполните автоматическую настройку (или следуйте инструкциям в боте), затем проверьте подключение.</p>
+        
+        <p><b>Если Telegram на вашем устройстве недоступен</b> — следуйте инструкции ниже. Вы получите временный доступ к VPN, который позволит открыть Telegram.</p>
+    </div>
+
+    <div class="card">
+        <h2>🚀 Способ 1. Автоматическая настройка (рекомендуемый)</h2>
+        <p>Нажмите на ссылку ниже — откроется окно настройки через виджет с возможностью выбора клиентского приложения. Подтвердите добавление.</p>
+        <button onclick="location.href='https://example.com/sub/123'">👉 Нажмите для автоматической настройки</button>
+    </div>
+
+    <div class="card">
+        <h2>🔧 Способ 2. Ручная настройка</h2>
+        
+        <p><b>Шаг 1. Установите VPN-клиент</b></p>
+        <p><b>Happ</b> — приложение, которое работает на платформах:</p>
+        <p><a href="https://apps.apple.com/de/app/happ-proxy-utility/id6504287215"><b>iPhone / iPad</b></a></p>
+        <p><a href="https://play.google.com/store/apps/details?id=com.happproxy"><b>Android</b></a></p>
+        <p><a href="https://www.happ.su/main/ru"><b>Другие платформы (официальный сайт Happ)</b></a></p>
+        <p>Если приложение недоступно в вашем регионе, воспользуйтесь альтернативными клиентами: v2rayNG, Streisand, NekoBox.</p>
+        
+        <p><b>Шаг 2. Скопируйте временную подписку</b></p>
+        <div class="code" id="subscriptionUrl">https://example.com/sub/123</div>
+        <button onclick="copySubscriptionUrl()">📋 Копировать ссылку подписки</button>
+        
+        <p><b>Шаг 3. Импортируйте подписку в Happ</b></p>
+        <p>
+        - Откройте приложение <b>Happ</b>.<br>
+        - Нажмите на значок <b>«➕»</b> в правом верхнем углу.<br>
+        - В появившемся меню выберите <b>«Вставить из буфера»</b>.<br>
+        - Приложение автоматически добавит серверы из скопированной подписки.
+        </p>
+        <p><i>Если приложение запрашивает разрешения — подтвердите их. Это необходимо для работы VPN.</i></p>
+        
+        <p><b>Шаг 4. Подключитесь к VPN</b></p>
+        <p>
+        - На главном экране Happ вы увидите добавленные серверы.<br>
+        - Нажмите на любой сервер, чтобы выделить его.<br>
+        - Нажмите круглую кнопку подключения в верхней части экрана.<br>
+        - Если система запросит разрешение на добавление VPN-конфигурации — нажмите <b>«Разрешить»</b> или <b>«OK»</b>.
+        </p>
+    </div>
+
+    <div class="card">
+        <h2>📌 Что дальше? Как получить постоянный доступ</h2>
+        <p>Вами была настроена <b>временная подписка к VPN</b>, которая будет действовать до <b>01.05.2026 12:00 GMT</b> (01.05.2026 15:00 МСК).</p>
+        <p>После того как Telegram заработал, вы можете настроить <b>постоянное VPN-подключение</b>.</p>
+        <p>Для этого воспользуйтесь реферальной ссылкой, которая была отправлена вам вместе со ссылкой на эту статью. Перейдите по ней и следуйте инструкциям — вы получите готовую конфигурацию для постоянного доступа.</p>
+        <p>Если реферальной ссылки нет — перейдите в <a href="https://t.me/VPN_Support_robot">статью с контактом бота</a>, нажмите на ссылку и проведите автоматическую настройку.</p>
+    </div>
+
+    <div class="card">
+        <h2>❓ Поддержка</h2>
+        <p>Если возникли сложности — напишите в <a href="https://t.me/VPN_Support_robot">поддержку</a>.</p>
+        <p><i>Данная инструкция обновляется автоматически. Если срок действия временной подписки истек — обновите страницу: ссылка будет заменена на актуальную.</i></p>
+    </div>
+
+    <script>
+        function copySubscriptionUrl() {
+            const url = document.getElementById('subscriptionUrl').innerText;
+            navigator.clipboard.writeText(url);
+            alert('✅ Ссылка подписки скопирована!');
+        }
+    </script>
 </body>
 </html>
